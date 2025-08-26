@@ -3,81 +3,87 @@ export default function Home() {
       <div className="home-container">
         {/* Navbar */}
         <header className="navbar">
-          <h1>💰 Purse Strings</h1>
+          <h1>💰 PurseStrings</h1>
           <button className="settings-btn">
             Settings
           </button>
         </header>
 
-        {/* Percy the Mascot */}
+        {/* Percy the Learning Guide */}
         <div className="percy-container">
           <div className="percy-character">
             <div className="percy-body">
-              <img src="/Percy-wave.png" alt="Percy the Goblin" className="percy-image" />
+              <img src="/Percy-wave.png" alt="Percy the Financial Guide" className="percy-image" />
             </div>
             <div className="percy-speech-bubble">
-              <p>Hi there! I'm Percy, your goblin financial advisor! 💰</p>
-              <p>Let's make smart money moves together!</p>
+              <p>Hi there! I'm Percy, your financial literacy companion! 💰</p>
+              <p>Ready to boost your money skills?</p>
             </div>
           </div>
         </div>
   
-        {/* Dashboard - 4 Quadrants */}
+        {/* Dashboard - 4 Learning Quadrants */}
         <main className="dashboard">
-          {/* Quadrant 1: Total Balance */}
-          <div className="quadrant balance-quadrant">
-            <h3>Total Balance</h3>
-            <p className="balance-amount">$12,340</p>
-            <div className="quadrant-icon">💰</div>
+          {/* Quadrant 1: Learning Progress */}
+          <div className="quadrant progress-quadrant">
+            <h3>Financial Progress</h3>
+            <p className="progress-amount">75%</p>
+            <div className="progress-circle">
+              <div className="progress-fill-circle" style={{transform: 'rotate(270deg)'}}></div>
+            </div>
+            <div className="quadrant-icon">📈</div>
           </div>
 
-          {/* Quadrant 2: Income & Expenses */}
-          <div className="quadrant income-expenses-quadrant">
-            <div className="income-section">
-              <h4>Monthly Income</h4>
-              <p className="income-amount">$4,500</p>
+          {/* Quadrant 2: Current Streak & Time */}
+          <div className="quadrant streak-quadrant">
+            <div className="streak-section">
+              <h4>Learning Streak</h4>
+              <p className="streak-amount">🔥 7 Days</p>
             </div>
-            <div className="expenses-section">
-              <h4>Monthly Expenses</h4>
-              <p className="expenses-amount">$2,900</p>
-            </div>
-            <div className="quadrant-icon">📊</div>
-          </div>
-
-          {/* Quadrant 3: Savings Goal */}
-          <div className="quadrant savings-quadrant">
-            <h3>Savings Goal</h3>
-            <p className="savings-amount">$8,000</p>
-            <div className="progress-bar">
-              <div className="progress-fill" style={{width: '65%'}}></div>
+            <div className="time-section">
+              <h4>Today's Goal</h4>
+              <p className="time-amount">⏱️ 15 min</p>
             </div>
             <div className="quadrant-icon">🎯</div>
           </div>
 
-          {/* Quadrant 4: Recent Transactions */}
-          <div className="quadrant transactions-quadrant">
-            <h3>Recent Transactions</h3>
-            <ul className="transactions-list">
-              <li className="transaction-item expense">
-                <span className="transaction-name">Groceries</span>
-                <span className="transaction-amount">- $120</span>
+          {/* Quadrant 3: Next Lesson */}
+          <div className="quadrant lesson-quadrant">
+            <h3>Next Lesson</h3>
+            <p className="lesson-title">Budgeting Basics</p>
+            <div className="lesson-progress">
+              <span className="lesson-module">Module 3 of 5</span>
+              <div className="lesson-bar">
+                <div className="lesson-fill" style={{width: '60%'}}></div>
+              </div>
+            </div>
+            <div className="quadrant-icon">📖</div>
+          </div>
+
+          {/* Quadrant 4: Recent Achievements */}
+          <div className="quadrant achievements-quadrant">
+            <h3>Recent Achievements</h3>
+            <ul className="achievements-list">
+              <li className="achievement-item badge">
+                <span className="achievement-name">First Money Lesson</span>
+                <span className="achievement-icon">🥇</span>
+                <span className="percy-tip">💡 Percy says: Great start to your financial journey!</span>
               </li>
-              <li className="transaction-item income">
-                <span className="transaction-name">Salary</span>
-                <span className="transaction-amount">+ $2,500</span>
-                <span className="percy-tip">💡 Percy says: Great job saving!</span>
+              <li className="achievement-item streak">
+                <span className="achievement-name">3-Day Learning Streak</span>
+                <span className="achievement-icon">🔥</span>
+                <span className="percy-tip">💡 Percy says: Consistency builds wealth!</span>
               </li>
-              <li className="transaction-item expense">
-                <span className="transaction-name">Coffee</span>
-                <span className="transaction-amount">- $5</span>
+              <li className="achievement-item lesson">
+                <span className="achievement-name">Budgeting Module Complete</span>
+                <span className="achievement-icon">✅</span>
               </li>
-              <li className="transaction-item income">
-                <span className="transaction-name">Freelance</span>
-                <span className="transaction-amount">+ $800</span>
-                <span className="percy-tip">💡 Percy says: Side hustle income!</span>
+              <li className="achievement-item time">
+                <span className="achievement-name">30 Min Study Session</span>
+                <span className="achievement-icon">⏰</span>
               </li>
             </ul>
-            <div className="quadrant-icon">📝</div>
+            <div className="quadrant-icon">🏆</div>
           </div>
         </main>
       </div>
